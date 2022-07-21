@@ -1,0 +1,65 @@
+.carousel {
+  margin-bottom: 70px;
+}
+.desc {
+  text-align: center;
+  position: relative;
+  color: #505050;
+  padding: 80px 40px 30px;
+  font-size: 23px;
+  line-height: 33px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.owl-carousel .item .desc .quote {
+  width: 66px;
+  top: -13px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel .container {
+  background-color: #ffffff;
+}
+.carousel-title {
+  text-align: center;
+  padding: 50px 0 40px 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+
+.owl-carousel .item .item-desc {
+  padding: 70px 15px;
+  background-color: #f3f8f9;
+  border-radius: 4px;
+}
+.owl-carousel .item .item-desc .desc-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* bottom: 77px; */
+}
+.owl-carousel .item .desc-img img {
+  width: auto;
+  border-radius: 50%;
+}
+
+.owl-carousel .item .item-content {
+  padding-top: 45px;
+  text-align: center;
+}
+.item-content .name p {
+  color: #226fb7;
+  font-family: "Rubick";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.item-content p {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Rubik";
+}
