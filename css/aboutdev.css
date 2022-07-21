@@ -109,19 +109,19 @@
     display: block;
     padding: 0;
   }
-  .left {
+  .hero-left {
     width: 100%;
     padding: 60px 60px;
   }
 
-  .left .tieude {
+  .hero-left .tieude {
     font-size: 25px;
   }
-  .left .tacgia {
+  .hero-left .tacgia {
     margin-bottom: 20px;
   }
 
-  .right {
+  .hero-right {
     width: 100%;
     padding: 0;
     margin-bottom: 75px;
