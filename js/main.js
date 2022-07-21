@@ -82,3 +82,22 @@ function imageMouseMove(event) {
 function imageMouseLeave(event){
     event.currentTarget.style.transform = `rotateX(0deg) rotateY(0deg)`;
 }
+// Scroll up button
+const scrollTopBtn = document.querySelector(".scroll-top-btn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopBtn.style.opacity = "1";
+    scrollTopBtn.style.visibility = "visible";
+    scrollTopBtn.style.transition = "var(--smooth)";
+   
+  } else {
+    scrollTopBtn.style.opacity = "0";
+    scrollTopBtn.style.visibility = "hidden";
+  }
+}
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top : 0
+    })
+})
