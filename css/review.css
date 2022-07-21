@@ -7,33 +7,36 @@
   position: relative;
 }
 .rv-container {
-  max-width: 1240px;
-  width: 100%;
+  position: relative;
+  max-width: 1270px;
   overflow: hidden;
-  padding: 80px 0;
+  padding: 50px 0 80px;
 }
 .rv-container .main-card {
   display: flex;
-  justify-content: space-between;
-  width: 200%;
   transition: 1s;
 }
-#two:checked ~ .main-card {
-  margin-left: -100%;
-}
-.rv-container .main-card .cards {
-  width: calc(100% / 2);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.main-card .cards .card {
-  width: calc(100% / 2 - 15px);
-  background: #fff;
-  transition: all 0.4s ease;
+
+.carousel-title {
+  text-align: center;
+  padding: 50px 0 40px 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Nunito";
 }
 
-.cards .card .rv-content {
+.main-card .card {
+  width: 605px;
+  background: #fff;
+  margin-right: 30px;
+  transition: all 0.4s ease;
+}
+#btn2:checked ~ .main-card {
+  transform: translateX(-635px);
+}
+
+.card .rv-content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -48,7 +51,7 @@
   background-color: #f3f8f9;
   border-radius: 5px 5px 5px 5px;
 }
-.cards .card .rv-content .rv-desc {
+.card .rv-content .rv-desc {
   text-align: center;
   position: relative;
   color: #505050;
@@ -92,7 +95,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin-top: 20px;
 }
 .rv-button label {
   width: 40px;
@@ -112,32 +115,105 @@
 .rv-button label.active {
   width: 40px;
 }
-#one:checked ~ .rv-button .one {
+#btn1:checked ~ .rv-button .btn1 {
   width: 40px;
   opacity: 1;
 }
-#one:checked ~ .rv-button .two {
-  width: 40px;
-}
-#two:checked ~ .rv-button .one {
-  width: 40px;
-}
-#two:checked ~ .rv-button .two {
+#btn2:checked ~ .rv-button .btn2 {
   width: 40px;
   opacity: 1;
 }
+#btn3:checked ~ .rv-button .btn3 {
+  width: 40px;
+  opacity: 1;
+}
+
 input[type="radio"] {
   display: none;
 }
-@media (max-width: 768px) {
-  .main-card .cards .card {
-    margin: 20px 0 10px 0;
-    width: calc(100% / 2 - 10px);
+@media (min-width: 1401px) {
+  .main-card {
+    width: 300%;
+    margin-left: -620px;
+  }
+  .rv-button .btn3 {
+    display: none;
   }
 }
-@media (max-width: 600px) {
-  .main-card .cards .card {
-    /* margin: 20px 0 10px 0; */
-    width: 100%;
+@media (max-width: 1400px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-585px);
+  }
+  .rv-button .btn3 {
+    display: none;
+  }
+  .main-card {
+    width: 300%;
+    margin-left: -570px;
+  }
+  .main-card .card {
+    width: 555px;
+  }
+  .rv-container {
+    max-width: 1170px;
+  }
+}
+@media (max-width: 1200px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-480px);
+  }
+  .rv-button .btn3 {
+    display: none;
+  }
+  .main-card {
+    width: 300%;
+    margin-left: -465px;
+  }
+  .main-card .card {
+    width: 450px;
+  }
+  .rv-container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 990px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-360px);
+  }
+  .rv-button .btn3 {
+    display: none;
+  }
+  .main-card {
+    width: 300%;
+    margin-left: -345px;
+  }
+  .main-card .card {
+    width: 330px;
+  }
+  .rv-container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 765px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-540px);
+  }
+  #btn3:checked ~ .main-card {
+    transform: translateX(-1080px);
+  }
+  .rv-button .btn3 {
+    display: block;
+  }
+  .main-card {
+    width: 600%;
+    margin-left: -525px;
+  }
+  .main-card .card {
+    width: 510px;
+  }
+  .rv-container {
+    width: 540px;
   }
 }
