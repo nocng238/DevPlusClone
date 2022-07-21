@@ -24,9 +24,11 @@
       rel="stylesheet"
     />
     <!-- main css -->
+    <link rel="stylesheet" href="./css/setup.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
     <link rel="stylesheet" href="./css/aboutdev.css" />
-    <link rel="stylesheet" href="./css/setup.css">
-    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/receive.css">
     <link rel="stylesheet" href="./css/campus.css">
     <link rel="stylesheet" href="./css/banner.css">
@@ -242,7 +244,7 @@
            <div class="list-row fade up">
              <div class="list-item">
                <div class="list-icon">
-                 <img src="/img/1.png" alt="img">
+                 <img src="./img/1.png" alt="img">
                </div>
                <div class="list-text">
                  <h4>Programing foundation</h4>
@@ -254,7 +256,7 @@
            <div class="list-row fade up">
              <div class="list-item">
                <div class="list-icon">
-                 <img src="/img/1.png" alt="img">
+                 <img src="./img/1.png" alt="img">
                </div>
                <div class="list-text">
                  <h4>Database</h4>
@@ -266,7 +268,7 @@
           <div class="list-row fade up">
            <div class="list-item">
              <div class="list-icon">
-               <img src="/img/3.png" alt="img">
+               <img src="./img/3.png" alt="img">
              </div>
              <div class="list-text">
                <h4>Testing</h4>
@@ -278,7 +280,7 @@
          <div class="list-row fade up">
            <div class="list-item">
              <div class="list-icon">
-               <img src="/img/4.png" alt="img">
+               <img src="./img/4.png" alt="img">
              </div>
              <div class="list-text">
                <h4>Front-end</h4>
@@ -290,7 +292,7 @@
          <div class="list-row fade up">
            <div class="list-item">
              <div class="list-icon">
-               <img src="/img/5.png" alt="img">
+               <img src="./img/5.png" alt="img">
              </div>
              <div class="list-text">
                <h4>Back-end</h4>
@@ -302,7 +304,7 @@
          <div class="list-row fade up">
            <div class="list-item">
              <div class="list-icon">
-               <img src="/img/6.png" alt="img">
+               <img src="./img/6.png" alt="img">
              </div>
              <div class="list-text">
                <h4>Agile Stable Team</h4>
@@ -314,7 +316,7 @@
          <div class="list-row fade up">
            <div class="list-item">
              <div class="list-icon">
-               <img src="/img/7.png" alt="img">
+               <img src="./img/7.png" alt="img">
              </div>
              <div class="list-text">
                <h4>English</h4>
@@ -326,7 +328,7 @@
          <div class="list-row fade up">
            <div class="list-item">
              <div class="list-icon">
-               <img src="/img/1.png" alt="img">
+               <img src="./img/1.png" alt="img">
              </div>
              <div class="list-text">
                <h4>Communication</h4>
@@ -338,7 +340,7 @@
          <div class="list-row fade up">
            <div class="list-item">
              <div class="list-icon">
-               <img src="/img/9.png" alt="img">
+               <img src="./img/9.png" alt="img">
              </div>
              <div class="list-text">
                <h4>Career path</h4>
@@ -405,25 +407,113 @@
     <!-- ADMISSION -->
     <section class="admission">admission</section>
     <!-- CONCERN -->
-    <section class="concern">common concern</section>
+    <section class="concern">
+      <!--COMMON CONCERNS-->
+
+      <div class="common-side">
+        <div class="common-container">
+          <!--FAQ side-->
+          <div class="faq-side">
+            <div class="faq-title">
+              <h2 class="text-part">Some common concerns</h2>
+            </div>
+            <!--FAQ area-->
+            <div class="faq-content">
+              <div class="accordition">
+                <!--FAQ Item-->
+                <div class="accordion-item" id="question-1">
+                  <button class="accordion-header">
+                    <i class="fa fa-bell-slash-o"></i>
+                    <i class="fa fa-bell-o"></i>
+                    Do I need to be fulltime during the campus?
+                  </button>
+                  <div class="answer-show">
+                    Yes, it’s mandatory. Fulltime as well as full commitment in
+                    order to obtain the best achievement.
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="accordion-2">
+                  <button class="accordion-header">
+                    <i class="fa fa-bell-slash-o" aria-hidden="true"></i>
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    Does Devplus offer free courses?
+                  </button>
+                  <div class="answer-show" id="anw-2">
+                    <p>
+                      Yes, it’s kind of a scholarship. But, you need to pass our
+                      challenge through test and interview round.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="accordion-3">
+                  <button class="accordion-header">
+                    <i class="fa fa-bell-slash-o"></i>
+                    <i class="fa fa-bell-o"></i>
+                    Which course will be suitable with me?
+                  </button>
+                  <div class="answer-show" id="anw-3">
+                    <p>
+                      The first plus (+) course is designed to students who
+                      would like to join the OJT (on-job-train) programme. Next
+                      level, the second plus (++) course will suitable for one
+                      who got the first plus or fresher, who would like to be
+                      trained in order to ready to onboard the real projects.
+                      The third plus (+++) course is intended to the alumni of
+                      the second plus degree or junior who would like to reach a
+                      specific tech-stack: AI, Blockchain, Devops...
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="accordion-4">
+                  <button class="accordion-header">
+                    <i class="fa fa-bell-slash-o" aria-hidden="true"></i>
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    Does Devplus guarantee a job after graduating?
+                  </button>
+                  <div class="answer-show" id="anw-4">
+                    <p>
+                      Yes, it’s could be a good job. Once you get the second
+                      plus (++) you will ready to onboard the projects of our
+                      partners, the most highly recommended places to work.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Video Area-->
+          <div class="video-side">
+            <div class="img-part">
+              <a class="popup-videos">
+                <i class="fa fa-play"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-video">
+        <div class="close-span">&times;</div>
+        <iframe
+          class="mfp-iframe"
+          src="//www.youtube.com/embed/mUjhiT0zSKI?autoplay=1"
+          frameborder="0"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </section>
     <!-- REVIEW -->
     <section class="review">review</section>
     <!-- footer -->
-
-    <footer>foooter</footer>
-   <!-- start receive -->
-   
-<!-- end receive -->
-
-<!-- start camous -->
-
-<!-- end campus -->
-
-
-    
-    
-    <script src="https://kit.fontawesome.com/9e767702e6.js" crossorigin="anonymous"></script>
-
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/9e767702e6.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/main.js"></script>
+    <script src="./js/common.js"></script>
   </body>
 </html>
