@@ -117,7 +117,7 @@
 .faq-side .faq-title .text-part {
   color: #111111;
   line-height: 46px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .faq-content {
   width: 100%;
@@ -127,7 +127,7 @@
 }
 .accordion-header {
   display: flex;
-  font-weight: 600;
+  font-weight: 550;
   font-size: 16px;
   color: #111111;
   font-family: inherit;
