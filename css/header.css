@@ -30,10 +30,12 @@ header {
   background-color: white;
   /* border: 1px solid red; */
   opacity: 0;
+  visibility: hidden;
   z-index: 6;
 }
 .navbar-links.navbar-open {
-  opacity: 1;
+    opacity: 1;
+  visibility: visible;
   transition: var(--smooth);
 }
 .navbar-link {
@@ -251,6 +253,7 @@ header {
     position: initial;
     /* transform: translateX(0); */
     opacity: 1;
+    visibility: visible;
     background-color: transparent;
     display: flex;
     justify-content: center;

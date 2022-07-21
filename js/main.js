@@ -58,3 +58,27 @@ const images = document.querySelectorAll('.fade');
         images.forEach(image => {
             observer.observe(image)
         })
+
+// image affect
+const imageAffect = document.querySelectorAll(".image-affect");
+// imageAffect.addEventListener('mousemove',imageMouseMove);
+imageAffect.forEach(image =>{
+    image.addEventListener('mousemove',imageMouseMove);
+    image.addEventListener('mouseleave', imageMouseLeave);
+})
+function imageMouseMove(event) {
+    const image = event.currentTarget;
+    const cardWidth = image.offsetWidth;
+    const cardHeight = image.offsetHeight;
+    const centerX = image.offsetLeft + cardWidth/2;
+    const centerY = image.offsetTop + cardHeight/2;
+    const mouseX = event.clientX - centerX;
+    const mouseY = event.clientY - centerY;
+    // console.log(mouseY)
+    const rotateX = 15*mouseX/(cardHeight/2);
+    const rotateY = -15*mouseY/(cardHeight/2);
+    image.style.transform = ` perspective(10000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.2, 1.2 , 1.2)` ;
+}
+function imageMouseLeave(event){
+    event.currentTarget.style.transform = `rotateX(0deg) rotateY(0deg)`;
+}
