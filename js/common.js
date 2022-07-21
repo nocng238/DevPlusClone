@@ -29,10 +29,17 @@ window.onclick = (e) => {
 /*Pop up process*/
 document.querySelector(".popup-videos").onclick = () => {
   document.querySelector(".popup-video").style.display = "block";
+  document.querySelector("header").style.display = "none";
   document.querySelector("popup-video iframe").src =
     "https://www.youtube.com/watch?v=mUjhiT0zSKI";
 };
 
-document.querySelector(".popup-video span").onclick = () => {
+document.querySelector(".popup-video .close-span").onclick = () => {
   document.querySelector(".popup-video").style.display = "none";
+  document.querySelector("header").style.display = "block";
+};
+
+document.querySelector(".popup-video").onclick = () => {
+  document.querySelector(".popup-video").style.display = "none";
+  document.querySelector("header").style.display = "block";
 };
