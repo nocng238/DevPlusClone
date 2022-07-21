@@ -34,3 +34,27 @@ closeSubMenuButton.addEventListener('click', ()=>{
     subMenu.classList.toggle("submenu-open")
     subMenuOpenButton.classList.toggle("submenu-open-btn-open")
 })
+// text scroll on view animation
+const images = document.querySelectorAll('.fade');
+
+
+        observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                   // entry.target.style.animation = `fadeInUp 1s forwards linear`;
+                  if(entry.target.classList.contains('up')){
+                    entry.target.style.animation = `fadeInUp 2s forwards ease`;}
+                  if(entry.target.classList.contains('left')){
+                    entry.target.style.animation = `fadeInLeft 2s forwards ease`;}
+                  if(entry.target.classList.contains('right')){
+                    entry.target.style.animation = `fadeInRight 2s forwards ease`;}
+                    
+                }
+              
+            })
+        })
+
+        images.forEach(image => {
+            observer.observe(image)
+        })
