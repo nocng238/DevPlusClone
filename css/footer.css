@@ -42,7 +42,7 @@
 .footer-text--right{
     list-style: outside none none;
 }
-.footer-text li a,li
+.footer-text li a,.footer-text li
 {
     color: #fff;
     font-family: 'Rubik', sans-serif;
