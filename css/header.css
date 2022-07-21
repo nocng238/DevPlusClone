@@ -253,6 +253,7 @@ header {
     position: initial;
     /* transform: translateX(0); */
     opacity: 1;
+    visibility: visible;
     background-color: transparent;
     display: flex;
     justify-content: center;
