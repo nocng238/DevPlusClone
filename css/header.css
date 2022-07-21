@@ -245,6 +245,7 @@ header {
 @media (min-width: 1000px) {
   .navbar {
     position: fixed;
+    background-color: white;
   }
   .navbar-links {
     position: initial;

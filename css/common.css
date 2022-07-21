@@ -117,7 +117,7 @@
 .faq-side .faq-title .text-part {
   color: #111111;
   line-height: 46px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .faq-content {
   width: 100%;
@@ -276,7 +276,6 @@
 }
 .concern .popup-video .close-span {
   position: absolute;
-  background-color: #226fb7;
   top: 40px;
   right: 40px;
   font-size: 30px;
