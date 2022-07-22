@@ -1,7 +1,10 @@
-.admission {
+.admisstion{
+  text-align: center;
+}
+.admission-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(501px, 1fr));
-  row-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* row-gap: 20px; */
   background: #f3f8f9;
 }
 
@@ -13,6 +16,9 @@ p#text-admission {
   padding-left: 100px;
   padding-right: 100px;
 }
+.content-admission{
+  width: 100%;
+}
 .content-admission p#title-admission {
   animation: 1s ease-out 0s 1 slideInFromLeft;
   padding-top: 90px;
@@ -23,24 +29,23 @@ p#text-admission {
   margin-bottom: 30px;
 }
 .img-admission {
-  padding: 0 80px;
+  /* padding: 0 80px; */
 }
 .img-admission img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .button {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-
   background-color: #226fb7;
   border: none;
   color: white;
-
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 100px;
+  margin: 100px 0;
+  margin-left: 100px;
   cursor: pointer; /* Change the cursor to pointer from default each time user hovers the button */
   border-radius: 40px;
   font-weight: 600;
