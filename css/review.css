@@ -1,0 +1,306 @@
+.review {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  position: relative;
+}
+.rv-container {
+  position: relative;
+  max-width: 1270px;
+  overflow: hidden;
+  padding: 50px 0 80px;
+}
+.rv-container .main-card {
+  display: flex;
+  transition: 1s;
+}
+
+.carousel-title {
+  text-align: center;
+  padding: 50px 0 40px 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+
+.main-card .card {
+  width: 605px;
+  background: #fff;
+  margin-right: 30px;
+  transition: all 0.4s ease;
+}
+#btn2:checked ~ .main-card {
+  transform: translateX(-635px);
+}
+
+.card .rv-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.rv-content .author-desc {
+  position: relative;
+  min-height: 440px;
+  padding: 70px 15px;
+  background-color: #f3f8f9;
+  border-radius: 5px 5px 5px 5px;
+}
+.card .rv-content .rv-desc {
+  text-align: center;
+  position: relative;
+  color: #505050;
+  padding: 80px 40px 30px;
+  font-size: 23px;
+  line-height: 33px;
+  font-weight: 500;
+  font-style: italic;
+}
+.rv-content .rv-desc .quote {
+  width: 66px;
+  top: -13px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.rv-content .desc-img {
+  position: absolute;
+  left: 50%;
+  bottom: -85px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.card .rv-content .rv-details {
+  padding-top: 45px;
+}
+.card .rv-content .rv-name {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #226fb7;
+  display: block;
+}
+.card .rv-content .rv-job {
+  font-size: 16px;
+  color: #111111;
+}
+
+.rv-container .rv-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.rv-button label {
+  width: 40px;
+  height: 10px;
+  display: inline-block;
+  margin: 0 6px;
+  padding: 3px 0;
+  border-radius: 30px;
+  background: #226fb7;
+  border: none;
+  opacity: 0.7;
+}
+.rv-button label:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.rv-button label.active {
+  width: 40px;
+}
+#btn1:checked ~ .rv-button .btn1 {
+  width: 40px;
+  opacity: 1;
+}
+#btn2:checked ~ .rv-button .btn2 {
+  width: 40px;
+  opacity: 1;
+}
+#btn3:checked ~ .rv-button .btn3 {
+  width: 40px;
+  opacity: 1;
+}
+
+input[type="radio"] {
+  display: none;
+}
+@media (min-width: 1401px) {
+  .main-card {
+    width: 300%;
+    margin-left: -620px;
+  }
+  .rv-button .btn3 {
+    display: none;
+  }
+}
+@media (max-width: 1400px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-585px);
+  }
+  .rv-button .btn3 {
+    display: none;
+  }
+  .main-card {
+    width: 300%;
+    margin-left: -570px;
+  }
+  .main-card .card {
+    width: 555px;
+  }
+  .rv-container {
+    max-width: 1170px;
+  }
+}
+@media (max-width: 1200px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-480px);
+  }
+  .rv-button .btn3 {
+    display: none;
+  }
+  .main-card {
+    width: 300%;
+    margin-left: -465px;
+  }
+  .main-card .card {
+    width: 450px;
+  }
+  .rv-container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 990px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-360px);
+  }
+  .rv-button .btn3 {
+    display: none;
+  }
+  .main-card {
+    width: 300%;
+    margin-left: -345px;
+  }
+  .main-card .card {
+    width: 330px;
+  }
+  .rv-container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 765px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-540px);
+  }
+  #btn3:checked ~ .main-card {
+    transform: translateX(-1080px);
+  }
+  .rv-button .btn3 {
+    display: block;
+  }
+  .main-card {
+    width: 600%;
+    margin-left: -525px;
+  }
+  .main-card .card {
+    width: 510px;
+  }
+  .rv-container {
+    width: 540px;
+  }
+}
+
+@media (max-width: 600px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-480px);
+  }
+  #btn3:checked ~ .main-card {
+    transform: translateX(-960px);
+  }
+  .rv-button .btn3 {
+    display: block;
+  }
+  .main-card {
+    width: 600%;
+    margin-left: -465px;
+  }
+  .main-card .card {
+    width: 450px;
+  }
+  .rv-container {
+    width: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-480px);
+  }
+  #btn3:checked ~ .main-card {
+    transform: translateX(-960px);
+  }
+  .rv-button .btn3 {
+    display: block;
+  }
+  .main-card {
+    width: 600%;
+    margin-left: -465px;
+  }
+  .main-card .card {
+    width: 450px;
+  }
+  .rv-container {
+    width: 480px;
+  }
+}
+@media (max-width: 415px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-415px);
+  }
+  #btn3:checked ~ .main-card {
+    transform: translateX(-830px);
+  }
+  .rv-button .btn3 {
+    display: block;
+  }
+  .main-card {
+    width: 600%;
+    margin-left: -400px;
+  }
+  .main-card .card {
+    width: 385px;
+  }
+  .rv-container {
+    width: 415px;
+  }
+}
+@media (max-width: 376px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-375px);
+  }
+  #btn3:checked ~ .main-card {
+    transform: translateX(-750px);
+  }
+  .rv-button .btn3 {
+    display: block;
+  }
+  .main-card {
+    width: 600%;
+    margin-left: -360px;
+  }
+  .main-card .card {
+    width: 345px;
+  }
+  .rv-container {
+    width: 375px;
+  }
+}
