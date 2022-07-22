@@ -56,28 +56,6 @@ images.forEach((image) => {
   observer.observe(image);
 });
 
-/*Review process*/
-var counter = 1;
-
-setInterval(() => {
-  document.getElementById("btn" + counter).checked = true;
-  counter++;
-  const width = window.innerWidth;
-  console.log(width);
-  if (width > 765) {
-    if (counter > 2) {
-      counter = 1;
-    }
-  } else {
-    if (counter > 3) {
-      counter = 1;
-    }
-  }
-}, 5000);
-images.forEach((image) => {
-  observer.observe(image);
-});
-
 // image affect
 const imageAffect = document.querySelectorAll(".image-affect");
 // imageAffect.addEventListener('mousemove',imageMouseMove);
@@ -120,4 +98,26 @@ scrollTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
   });
+});
+
+/*Review process*/
+var counter = 1;
+
+setInterval(() => {
+  document.getElementById("btn" + counter).checked = true;
+  counter++;
+  const width = window.innerWidth;
+  console.log(width);
+  if (width > 765) {
+    if (counter > 2) {
+      counter = 1;
+    }
+  } else {
+    if (counter > 3) {
+      counter = 1;
+    }
+  }
+}, 5000);
+images.forEach((image) => {
+  observer.observe(image);
 });

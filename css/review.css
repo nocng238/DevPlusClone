@@ -219,7 +219,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #btn2:checked ~ .main-card {
     transform: translateX(-480px);
   }
@@ -235,9 +235,72 @@ input[type="radio"] {
   }
   .main-card .card {
     width: 450px;
-    margin-right: 30px;
   }
   .rv-container {
-    width: 100%;
+    width: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-480px);
+  }
+  #btn3:checked ~ .main-card {
+    transform: translateX(-960px);
+  }
+  .rv-button .btn3 {
+    display: block;
+  }
+  .main-card {
+    width: 600%;
+    margin-left: -465px;
+  }
+  .main-card .card {
+    width: 450px;
+  }
+  .rv-container {
+    width: 480px;
+  }
+}
+@media (max-width: 415px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-415px);
+  }
+  #btn3:checked ~ .main-card {
+    transform: translateX(-830px);
+  }
+  .rv-button .btn3 {
+    display: block;
+  }
+  .main-card {
+    width: 600%;
+    margin-left: -400px;
+  }
+  .main-card .card {
+    width: 385px;
+  }
+  .rv-container {
+    width: 415px;
+  }
+}
+@media (max-width: 376px) {
+  #btn2:checked ~ .main-card {
+    transform: translateX(-375px);
+  }
+  #btn3:checked ~ .main-card {
+    transform: translateX(-750px);
+  }
+  .rv-button .btn3 {
+    display: block;
+  }
+  .main-card {
+    width: 600%;
+    margin-left: -360px;
+  }
+  .main-card .card {
+    width: 345px;
+  }
+  .rv-container {
+    width: 375px;
   }
 }
