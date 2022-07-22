@@ -79,3 +79,26 @@ button {
   padding: 20px 58px;
   border-radius: 30px;
 }
+
+.scroll-top-btn{
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background-color:#226FB7;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+
+}
+.scroll-top-btn:hover{
+  background-color: var(--bs-green);
+}
+.scroll-top-btn i{
+  font-weight: 700;
+  font-size: 20px;
+}
